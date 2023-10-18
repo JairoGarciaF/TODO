@@ -1,0 +1,27 @@
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900">
+    <div class="w-full max-w-screen-xl mx-auto">
+
+        <hr class=" border-gray-200 sm:mx-auto dark:border-gray-700" />
+        <span class="mt-3 block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2023. All Rights
+            Reserved.</span>
+    </div>
+</footer>
+
+<script>
+    const checkboxes = document.querySelectorAll('[id^="check"]');
+
+    checkboxes.forEach((checkbox, index) => {
+        checkbox.addEventListener('change', (event) => {
+            const span = document.querySelectorAll('.whitespace-nowrap')[index];
+            if (event.target.checked) {
+                span.classList.add('line-through'); // Reemplaza 'line-through	' con el nombre de tu clase
+            } else {
+                span.classList.remove('line-through'); // Reemplaza 'line-through	' con el nombre de tu clase
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
